@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="Passeports" org.eventb.core.type="ℙ(Passeports)"/>
+<org.eventb.core.poIdentifier name="Pays" org.eventb.core.type="ℙ(Pays)"/>
+<org.eventb.core.poIdentifier name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="Acces" org.eventb.core.type="ℙ(Personnes×Pays)"/>
+<org.eventb.core.poIdentifier name="AccesPasseport" org.eventb.core.type="ℙ(Passeports×Pays)"/>
+<org.eventb.core.poIdentifier name="Alice" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="Bob" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="Jimmy" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="PorteEntree" org.eventb.core.type="Pays"/>
+<org.eventb.core.poIdentifier name="PorteSortie" org.eventb.core.type="Pays"/>
+<org.eventb.core.poIdentifier name="SAS" org.eventb.core.type="ℙ(Pays×Pays)"/>
+<org.eventb.core.poIdentifier name="c0" org.eventb.core.type="ℙ(Personnes×Pays)"/>
+<org.eventb.core.poIdentifier name="passeport" org.eventb.core.type="ℙ(Personnes×Passeports)"/>
+<org.eventb.core.poPredicate name="AccesPasseporu" org.eventb.core.predicate="PorteEntree∈Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="AccesPasseporv" org.eventb.core.predicate="PorteSortie∈Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#1"/>
+<org.eventb.core.poPredicate name="AccesPasseporw" org.eventb.core.predicate="PorteEntree≠PorteSortie" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#2"/>
+<org.eventb.core.poPredicate name="AccesPasseporx" org.eventb.core.predicate="SAS⊆Pays × Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#5"/>
+<org.eventb.core.poPredicate name="AccesPassepory" org.eventb.core.predicate="Alice∈Personnes" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#6"/>
+<org.eventb.core.poPredicate name="AccesPasseporz" org.eventb.core.predicate="Bob∈Personnes" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#7"/>
+<org.eventb.core.poPredicate name="AccesPassepor{" org.eventb.core.predicate="Jimmy∈Personnes" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="AccesPassepor|" org.eventb.core.predicate="Alice≠Bob" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#9"/>
+<org.eventb.core.poPredicate name="AccesPassepor}" org.eventb.core.predicate="Alice≠Jimmy" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#:"/>
+<org.eventb.core.poPredicate name="AccesPassepor~" org.eventb.core.predicate="Bob≠Jimmy" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="AccesPassepos'" org.eventb.core.predicate="Acces⊆Personnes × Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="AccesPassepos(" org.eventb.core.predicate="c0∈Personnes → Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="AccesPassepos)" org.eventb.core.predicate="∀x⦂Personnes·x∈Personnes⇒c0(x)=PorteEntree" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="AccesPassepos*" org.eventb.core.predicate="c0⊆Acces" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="AccesPassepos+" org.eventb.core.predicate="∀p⦂Pays·p∈Pays⇒p ↦ p∉SAS" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#B"/>
+<org.eventb.core.poPredicate name="AccesPassepos," org.eventb.core.predicate="card(SAS)≤1" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="AccesPassepos-" org.eventb.core.predicate="passeport⊆Personnes × Passeports" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#J"/>
+<org.eventb.core.poPredicate name="AccesPassepos." org.eventb.core.predicate="AccesPasseport⊆Passeports × Pays" org.eventb.core.source="/PARAFE/Context.buc|org.eventb.core.contextFile#Context|org.eventb.core.axiom#L"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="c" org.eventb.core.type="ℙ(Personnes×Pays)"/>
+<org.eventb.core.poIdentifier name="passep" org.eventb.core.type="ℙ(Passeports×Pays)"/>
+<org.eventb.core.poIdentifier name="porte1" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="porte2" org.eventb.core.type="BOOL"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="c'∈Personnes → Pays∧c'⊆Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c'∈Personnes → Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="c'∈Personnes → Pays∧c'⊆Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="c'⊆Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="passep'∈Passeports → Pays∧passep'⊆AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="passep'∈Passeports → Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="passep'∈Passeports → Pays∧passep'⊆AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="passep'⊆AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃c'⦂ℙ(Personnes×Pays)·c'∈Personnes → Pays∧c'⊆Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act4/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃passep'⦂ℙ(Passeports×Pays)·passep'∈Passeports → Pays∧passep'⊆AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#'|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTALLHYPContex{"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContex{" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poIdentifier name="porte1'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="porte2'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="c'" org.eventb.core.type="ℙ(Personnes×Pays)"/>
+<org.eventb.core.poIdentifier name="passep'" org.eventb.core.type="ℙ(Passeports×Pays)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContex{" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTIDENTContex{" org.eventb.core.poStamp="13"/>
+<org.eventb.core.poSequent name="observation1/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTHYPContex\|("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="personne∈dom(c)∧c∈Personnes ⇸ Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#\/"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#\/"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTHYPContex\|("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContex|" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="14">
+<org.eventb.core.poIdentifier name="personne" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="pays" org.eventb.core.type="Pays"/>
+<org.eventb.core.poIdentifier name="porte1'" org.eventb.core.type="BOOL"/>
+<org.eventb.core.poIdentifier name="Passeport" org.eventb.core.type="Passeports"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPContex|(" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTIDENTContex\|" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="personne∈Personnes" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#-"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pays∈Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#."/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContex|" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#EVTHYPContex\|(" org.eventb.core.poStamp="14">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="c(personne)=PorteEntree" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#\/"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="personne ↦ pays∈Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#0"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="porte2=FALSE" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#2"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="porte1=FALSE" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#3"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="Passeport ↦ pays∈AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.event#-|org.eventb.core.guard#4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/PARAFE/Machine.bpo|org.eventb.core.poFile#Machine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∈Personnes → Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="c⊆Acces" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="porte1∈BOOL" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="porte2∈BOOL" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#1"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="passep∈Passeports → Pays" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#3"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="passep⊆AccesPasseport" org.eventb.core.source="/PARAFE/Machine.bum|org.eventb.core.machineFile#Machine|org.eventb.core.invariant#4"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="c :∣(c'∈ Personnes→Pays ∧ c'⊆Acces)" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="porte1 ≔ FALSE" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="porte2 ≔ FALSE" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="passep:∣(passep'∈ Passeports→Pays ∧ passep'⊆AccesPasseport)" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context"/>
+<org.eventb.core.variable name=")" org.eventb.core.identifier="c"/>
+<org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="c ∈ Personnes → Pays"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv2" org.eventb.core.predicate="c ⊆ Acces"/>
+<org.eventb.core.event name="-" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="observation1">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="personne"/>
+<org.eventb.core.parameter name="(" org.eventb.core.identifier="pays"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd1" org.eventb.core.predicate="personne ∈ Personnes"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd2" org.eventb.core.predicate="pays ∈ Pays"/>
+<org.eventb.core.guard name="/" org.eventb.core.label="grd3" org.eventb.core.predicate="c(personne) = PorteEntree"/>
+<org.eventb.core.guard name="0" org.eventb.core.label="grd4" org.eventb.core.predicate="personne ↦ pays ∈ Acces"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="porte1 ≔ TRUE" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="2" org.eventb.core.label="grd5" org.eventb.core.predicate="porte2 = FALSE"/>
+<org.eventb.core.guard name="3" org.eventb.core.label="grd6" org.eventb.core.predicate="porte1 = FALSE"/>
+<org.eventb.core.guard name="4" org.eventb.core.label="grd7" org.eventb.core.predicate="Passeport ↦ pays ∈ AccesPasseport"/>
+<org.eventb.core.parameter name="5" org.eventb.core.identifier="Passeport"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="." org.eventb.core.identifier="porte1"/>
+<org.eventb.core.variable name="/" org.eventb.core.identifier="porte2"/>
+<org.eventb.core.invariant name="0" org.eventb.core.label="inv3" org.eventb.core.predicate="porte1 ∈ BOOL"/>
+<org.eventb.core.invariant name="1" org.eventb.core.label="inv4" org.eventb.core.predicate="porte2 ∈ BOOL"/>
+<org.eventb.core.variable name="2" org.eventb.core.identifier="passep"/>
+<org.eventb.core.invariant name="3" org.eventb.core.label="inv5" org.eventb.core.predicate="passep ∈ Passeports → Pays"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv6" org.eventb.core.predicate="passep ⊆ AccesPasseport"/>
+</org.eventb.core.machineFile>

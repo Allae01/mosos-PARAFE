@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Personnes"/>
+<org.eventb.core.carrierSet name="(" org.eventb.core.identifier="Pays"/>
+<org.eventb.core.constant name=")" org.eventb.core.identifier="PorteEntree"/>
+<org.eventb.core.constant name="*" org.eventb.core.identifier="PorteSortie"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm1" org.eventb.core.predicate="PorteEntree ∈ Pays"/>
+<org.eventb.core.constant name="-" org.eventb.core.identifier="Acces"/>
+<org.eventb.core.constant name="." org.eventb.core.comment="personne ayant un total acces" org.eventb.core.identifier="Alice"/>
+<org.eventb.core.constant name="/" org.eventb.core.comment="personne ayant un passeport invalide" org.eventb.core.identifier="Bob"/>
+<org.eventb.core.constant name="0" org.eventb.core.comment="persone ayant un passeport valide mais banni du pays d'entree" org.eventb.core.identifier="Jimmy"/>
+<org.eventb.core.axiom name="1" org.eventb.core.label="axm2" org.eventb.core.predicate="PorteSortie ∈ Pays"/>
+<org.eventb.core.axiom name="2" org.eventb.core.label="axm3" org.eventb.core.predicate="PorteEntree ≠ PorteSortie "/>
+<org.eventb.core.constant name="4" org.eventb.core.identifier="SAS"/>
+<org.eventb.core.axiom name="5" org.eventb.core.label="axm5" org.eventb.core.predicate="SAS  ⊆ Pays×Pays"/>
+<org.eventb.core.axiom name="6" org.eventb.core.label="axm6" org.eventb.core.predicate="Alice ∈ Personnes "/>
+<org.eventb.core.axiom name="7" org.eventb.core.label="axm7" org.eventb.core.predicate="Bob ∈ Personnes"/>
+<org.eventb.core.axiom name="8" org.eventb.core.label="axm8" org.eventb.core.predicate="Jimmy ∈ Personnes"/>
+<org.eventb.core.axiom name="9" org.eventb.core.label="axm9" org.eventb.core.predicate="Alice ≠ Bob"/>
+<org.eventb.core.axiom name=":" org.eventb.core.label="axm10" org.eventb.core.predicate="Alice ≠ Jimmy"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm11" org.eventb.core.predicate="Bob ≠ Jimmy"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm12" org.eventb.core.predicate="Acces ⊆ Personnes×Pays"/>
+<org.eventb.core.constant name="&gt;" org.eventb.core.identifier="c0"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm13" org.eventb.core.predicate="c0 ∈ Personnes →Pays"/>
+<org.eventb.core.axiom name="@" org.eventb.core.label="axm14" org.eventb.core.predicate="∀x· x∈Personnes ⇒ c0(x)=PorteEntree"/>
+<org.eventb.core.axiom name="A" org.eventb.core.label="axm15" org.eventb.core.predicate="c0 ⊆ Acces"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="axm16" org.eventb.core.predicate="∀p· p ∈ Pays ⇒ p↦p ∉ SAS"/>
+<org.eventb.core.axiom name="G" org.eventb.core.label="axm19" org.eventb.core.predicate="card(SAS) ≤ 1"/>
+<org.eventb.core.carrierSet name="H" org.eventb.core.identifier="Passeports"/>
+<org.eventb.core.constant name="I" org.eventb.core.identifier="passeport"/>
+<org.eventb.core.axiom name="J" org.eventb.core.label="axm20" org.eventb.core.predicate="passeport ⊆ Personnes × Passeports "/>
+<org.eventb.core.constant name="K" org.eventb.core.identifier="AccesPasseport"/>
+<org.eventb.core.axiom name="L" org.eventb.core.label="axm21" org.eventb.core.predicate="AccesPasseport ⊆ Passeports×Pays"/>
+</org.eventb.core.contextFile>
